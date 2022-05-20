@@ -33,7 +33,6 @@ function readAndSolve(err, data) {
   }
 }
 
-
 // Reads file and sends data from it to the readAndSolve function.
 fs.readFile(
   './sudoku-puzzles.txt',
