@@ -15,6 +15,7 @@ function sudokuParse(content, puzzleNumber = 0) {
   console.log(puzzle);
   console.log('parser');
   return puzzle;
+
 }
 
 
