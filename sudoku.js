@@ -4,7 +4,17 @@
 // your solver has tried to solve it.
 // How you represent your board is up to you!
 function solve(boardString) {
-  console.log('first changes');
+  const field = [];
+  let row = [];
+  for (let i = 0; i < boardString.length; i += 1) {
+    row.push(boardString[i]);
+    if (row.length === 9) {
+      field.push(row);
+      row = [];
+    }
+  }
+  console.table(field);
+  return field;
 }
 
 // Returns a boolean indicating whether
