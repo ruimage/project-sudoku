@@ -6,7 +6,6 @@
 function solve(boardString) {
   // Что передавать в эту функцию?
   console.table(field);
-  return field;
 }
 
 // Returns a boolean indicating whether
