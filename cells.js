@@ -14,4 +14,17 @@ const getEmptyCells = (puzzle) => {
   return arrEmpty;
 };
 
+function factoringSudokuField = (boardString) => {
+  const field = [];
+  let row = [];
+  for (let i = 0; i < boardString.length; i += 1) {
+    row.push(boardString[i]);
+    if (row.length === 9) {
+      field.push(row);
+      row = [];
+    }
+  }
+  return field;
+}
+
 module.exports = { getEmptyCells };
