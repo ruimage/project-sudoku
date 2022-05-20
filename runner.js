@@ -17,7 +17,7 @@ function sudokuParse(content, puzzleNumber = 0) {
   return puzzle;
 }
 
-console.log('hello');
+
 
 function readAndSolve(err, data) {
   if (err) {
