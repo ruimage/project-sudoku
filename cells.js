@@ -14,7 +14,7 @@ const getEmptyCells = (puzzle) => {
   return arrEmpty;
 };
 
-function factoringSudokuField = (boardString) => {
+function getSudokuField = (boardString) => {
   const field = [];
   let row = [];
   for (let i = 0; i < boardString.length; i += 1) {
