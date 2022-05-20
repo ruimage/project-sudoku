@@ -27,4 +27,8 @@ function getSudokuField = (boardString) => {
   return field;
 }
 
-module.exports = { getEmptyCells };
+function sumOfField = (array) => {
+  return array.reduce((acc, el) => acc + Number(el), 0) === 405 ? true : false;
+} 
+
+module.exports = { getEmptyCells, getSudokuField, sumOfField };
